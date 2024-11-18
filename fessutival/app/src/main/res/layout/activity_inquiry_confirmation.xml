@@ -1,0 +1,56 @@
+<!-- res/layout/activity_cancel_confirmation.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/view_border"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Title TextView -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="문의하기"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Message TextView -->
+        <TextView
+            android:id="@+id/inquiryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="문의 전화번호 : 010-4423-5612. \n Instagram : mo._.gang_02"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Cancel Button -->
+
+
+            <!-- Okay Button -->
+            <Button
+                android:id="@+id/okayButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Okay"
+                android:textColor="#18A0FB" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

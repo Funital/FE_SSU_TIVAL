@@ -1,0 +1,63 @@
+<!-- res/layout/activity_cancel_confirmation.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/CancelLayout"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/view_border"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Title TextView -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="예약 취소하기"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Message TextView -->
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="정말 취소하시겠습니까?"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Cancel Button -->
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Cancel"
+                android:textColor="#18A0FB" />
+
+            <!-- Okay Button -->
+            <Button
+                android:id="@+id/okayButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Okay"
+                android:textColor="#18A0FB" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
