@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/activity_account.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/activity_account.xml"
+    },
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/activity_login.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/fragment_reservation.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/fragment_reservation.xml"
+    },
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/item_event.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/item_event.xml"
+    },
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/fragment_calendar.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/fragment_calendar.xml"
+    },
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/activity_calendar.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/activity_calendar.xml"
+    },
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/activity_splash.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/fragment_home.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.fessutival.app-mergeDebugResources-30:/layout/fragment_settings.xml",
+        "source": "com.example.fessutival.app-main-33:/layout/fragment_settings.xml"
+    }
+]

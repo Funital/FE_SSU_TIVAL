@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="ssu_color">#18A0FB</color>
+    <color name="ssu_color2">#a5cbe8</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Fessutival</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/ssu_color</item> 
+    </style>
+    <style name="Base.Theme.Fessutival" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="EventSectionTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="EventTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Theme.Fessutival" parent="Base.Theme.Fessutival"/>
+</resources>
