@@ -101,6 +101,19 @@
             </LinearLayout>
         </LinearLayout>
 
+
+
+        <!-- New container for dynamically added reservations -->
+        <LinearLayout
+            android:id="@+id/myReservationsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- New reservations will be added here dynamically -->
+        </LinearLayout>
+
+
+
         <!-- Divider -->
         <TextView
             android:layout_width="wrap_content"
@@ -116,6 +129,14 @@
             android:layout_height="1dp"
             android:layout_marginVertical="16dp"
             android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:id="@+id/availableReservationsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 기존의 예약 가능한 주점 항목들 -->
+        </LinearLayout>
 
         <!-- Repeatable section inside a vertical LinearLayout to allow scrolling -->
         <LinearLayout
@@ -217,7 +238,7 @@
                         android:id="@+id/availableReservationText2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="경영대학 주점"
+                        android:text="기계공학과 주점"
                         android:textSize="23sp"
                         android:textStyle="bold" />
 
@@ -226,7 +247,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="6dp"
-                        android:text="현재 대기팀 : 2팀"
+                        android:text="현재 대기팀 : 3팀"
                         android:textSize="18sp" />
 
                     <TextView
@@ -235,7 +256,7 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="6dp"
                         android:paddingBottom="5dp"
-                        android:text="예상 대기시간 : 10~20분"
+                        android:text="예상 대기시간 : 20~25분"
                         android:textSize="18sp" />
 
                     <!-- Reservation Button -->
@@ -283,7 +304,7 @@
                         android:id="@+id/availableReservationText3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="경영대학 주점"
+                        android:text="자유전공학부 주점"
                         android:textSize="23sp"
                         android:textStyle="bold" />
 
@@ -292,7 +313,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="6dp"
-                        android:text="현재 대기팀 : 2팀"
+                        android:text="현재 대기팀 : 1팀"
                         android:textSize="18sp" />
 
                     <TextView
@@ -301,7 +322,7 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="6dp"
                         android:paddingBottom="5dp"
-                        android:text="예상 대기시간 : 10~20분"
+                        android:text="예상 대기시간 : 10분미만"
                         android:textSize="18sp" />
 
                     <!-- Reservation Button -->
@@ -349,7 +370,7 @@
                         android:id="@+id/availableReservationText4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="경영대학 주점"
+                        android:text="인문대학 주점"
                         android:textSize="23sp"
                         android:textStyle="bold" />
 
@@ -358,7 +379,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="6dp"
-                        android:text="현재 대기팀 : 2팀"
+                        android:text="현재 대기팀 : 4팀"
                         android:textSize="18sp" />
 
                     <TextView
@@ -367,7 +388,7 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="6dp"
                         android:paddingBottom="5dp"
-                        android:text="예상 대기시간 : 10~20분"
+                        android:text="예상 대기시간 : 25~30분"
                         android:textSize="18sp" />
 
                     <!-- Reservation Button -->
@@ -415,7 +436,7 @@
                         android:id="@+id/availableReservationText5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="경영대학 주점"
+                        android:text="금융학부 주점"
                         android:textSize="23sp"
                         android:textStyle="bold" />
 
@@ -424,7 +445,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="6dp"
-                        android:text="현재 대기팀 : 2팀"
+                        android:text="현재 대기팀 : 4팀"
                         android:textSize="18sp" />
 
                     <TextView
@@ -433,7 +454,7 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="6dp"
                         android:paddingBottom="5dp"
-                        android:text="예상 대기시간 : 10~20분"
+                        android:text="예상 대기시간 : 25~30분"
                         android:textSize="18sp" />
 
                     <!-- Reservation Button -->

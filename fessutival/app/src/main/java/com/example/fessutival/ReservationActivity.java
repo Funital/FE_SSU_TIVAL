@@ -1,126 +1,211 @@
 package com.example.fessutival;
 
 import android.app.Dialog;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.fessutival.databinding.ActivityCancelConfirmationBinding;
+import com.example.fessutival.databinding.ActivityCompleteConfirmationBinding;
+import com.example.fessutival.databinding.ActivityInquiryConfirmationBinding;
+import com.example.fessutival.databinding.ActivityReservationBinding;
 
 public class ReservationActivity extends AppCompatActivity {
 
-    private LinearLayout reservationLayout; // IT대학 주점 레이아웃 참조
+    private ActivityReservationBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reservation);
+        binding = ActivityReservationBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        reservationLayout = findViewById(R.id.reservationLayout); // IT대학 주점 레이아웃
-        Button cancelReservationButton = findViewById(R.id.myCancelReservationButton);
-        Button inquiryButton = findViewById(R.id.myReservationButton); // 문의 버튼
+        // 취소 버튼 클릭 리스너
+        binding.myCancelReservationButton.setOnClickListener(v -> showCancelDialog(binding.reservationLayout));
 
-        // 취소 버튼 클릭 시 다이얼로그 표시
-        cancelReservationButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showCancelDialog(); // 취소 다이얼로그 띄우기
-            }
-        });
+        // 문의 버튼 클릭 리스너
+        binding.myReservationButton.setOnClickListener(v -> showInquiryDialog());
 
-        // 문의 버튼 클릭 시 다이얼로그 표시
-        inquiryButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showInquiryDialog(); // 문의 다이얼로그 띄우기
-            }
-        });
+        // 예약하기 버튼 클릭 리스너 추가
+        binding.availableReservationButton1.setOnClickListener(v -> showReservationCompleteDialog((LinearLayout) v.getParent().getParent().getParent()));
+        binding.availableReservationButton2.setOnClickListener(v -> showReservationCompleteDialog((LinearLayout) v.getParent().getParent().getParent()));
+        binding.availableReservationButton3.setOnClickListener(v -> showReservationCompleteDialog((LinearLayout) v.getParent().getParent().getParent()));
+        binding.availableReservationButton4.setOnClickListener(v -> showReservationCompleteDialog((LinearLayout) v.getParent().getParent().getParent()));
+        binding.availableReservationButton5.setOnClickListener(v -> showReservationCompleteDialog((LinearLayout) v.getParent().getParent().getParent()));
     }
 
-    private void showCancelDialog() {
-        // 사용자 정의 다이얼로그 생성
-        Dialog dialog = new Dialog(this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.activity_cancel_confirmation);
+    private void showCancelDialog(View reservationView) {
+        ActivityCancelConfirmationBinding dialogBinding = ActivityCancelConfirmationBinding.inflate(getLayoutInflater());
+        Dialog dialog = createCustomDialog(dialogBinding.getRoot());
 
-        if (dialog.getWindow() != null) {
-            dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-        }
-
-        // 다이얼로그 버튼 연결
-        Button cancelButton = dialog.findViewById(R.id.cancelButton);
-        Button okayButton = dialog.findViewById(R.id.okayButton);
-
-        // "Cancel" 버튼 클릭 시 다이얼로그 닫기
-        cancelButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss(); // 다이얼로그 닫기
-            }
-        });
-
-        // "Okay" 버튼 클릭 시
-        okayButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss(); // 다이얼로그 닫기
-                showCompleteDialog(); // "취소되었습니다" 팝업 표시
-            }
+        dialogBinding.cancelButton.setOnClickListener(v -> dialog.dismiss());
+        dialogBinding.okayButton.setOnClickListener(v -> {
+            dialog.dismiss();
+            moveReservationToAvailable(reservationView);
+            showCompleteDialog("예약이 취소되었습니다.");
         });
 
         dialog.show();
     }
 
-    private void showCompleteDialog() {
-        // 완료 다이얼로그 생성
-        Dialog completeDialog = new Dialog(this);
-        completeDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        completeDialog.setContentView(R.layout.activity_complete_confirmation);
+    private void showCompleteDialog(String message) {
+        ActivityCompleteConfirmationBinding dialogBinding = ActivityCompleteConfirmationBinding.inflate(getLayoutInflater());
+        Dialog dialog = createCustomDialog(dialogBinding.getRoot());
 
-        if (completeDialog.getWindow() != null) {
-            completeDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-        }
-
-        // 완료 다이얼로그의 확인 버튼
-        Button okayButton = completeDialog.findViewById(R.id.okayButton);
-        okayButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                completeDialog.dismiss(); // 다이얼로그 닫기
-
-                // IT대학 주점 레이아웃 삭제
-                if (reservationLayout != null) {
-                    reservationLayout.setVisibility(View.GONE);
-                }
-
-                // "취소되었습니다" 메시지 표시
-                Toast.makeText(ReservationActivity.this, "취소되었습니다.", Toast.LENGTH_SHORT).show();
-            }
+        dialogBinding.okayButton.setOnClickListener(v -> {
+            dialog.dismiss();
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         });
 
-        completeDialog.show();
+        dialog.show();
     }
+
     private void showInquiryDialog() {
-        // Inquiry 다이얼로그 생성
-        Dialog inquiryDialog = new Dialog(this);
-        inquiryDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        inquiryDialog.setContentView(R.layout.activity_inquiry_confirmation); // 올바른 레이아웃 참조
+        ActivityInquiryConfirmationBinding dialogBinding = ActivityInquiryConfirmationBinding.inflate(getLayoutInflater());
+        Dialog dialog = createCustomDialog(dialogBinding.getRoot());
 
-        if (inquiryDialog.getWindow() != null) {
-            inquiryDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-        }
+        dialogBinding.okayButton.setOnClickListener(v -> dialog.dismiss());
+        dialog.show();
+    }
 
-        // 다이얼로그의 "Okay" 버튼
-        Button okayButton = inquiryDialog.findViewById(R.id.okayButton);
-        okayButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                inquiryDialog.dismiss(); // 문의 다이얼로그 닫기
-            }
+    private void showReservationCompleteDialog(LinearLayout reservationLayout) {
+        ActivityCompleteConfirmationBinding dialogBinding = ActivityCompleteConfirmationBinding.inflate(getLayoutInflater());
+        Dialog dialog = createCustomDialog(dialogBinding.getRoot());
+
+        dialogBinding.CompleteTextView1.setText("예약 완료하기");
+        dialogBinding.CompleteTextView2.setText("예약이 완료되었습니다.");
+
+        dialogBinding.okayButton.setOnClickListener(v -> {
+            dialog.dismiss();
+            Toast.makeText(this, "예약이 완료되었습니다.", Toast.LENGTH_SHORT).show();
+            moveReservationToMyReservations(reservationLayout);
         });
 
-        inquiryDialog.show();
+        dialog.show();
+    }
+
+    private Dialog createCustomDialog(View contentView) {
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(contentView);
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        }
+        return dialog;
+    }
+
+    private void moveReservationToMyReservations(LinearLayout reservationLayout) {
+        // 새로운 예약 레이아웃 생성
+        LinearLayout newReservationLayout = new LinearLayout(this);
+        newReservationLayout.setLayoutParams(new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT));
+        newReservationLayout.setOrientation(LinearLayout.HORIZONTAL);
+        newReservationLayout.setPadding(16, 16, 16, 16);
+        newReservationLayout.setBackgroundResource(R.drawable.view_border);
+
+        // 기존 레이아웃의 내용을 새 레이아웃으로 복사
+        for (int i = 0; i < reservationLayout.getChildCount(); i++) {
+            View child = reservationLayout.getChildAt(i);
+            if (child instanceof ImageView || child instanceof LinearLayout) {
+                newReservationLayout.addView(cloneView(child));
+            }
+        }
+
+        // 버튼 레이아웃 수정
+        LinearLayout buttonLayout = (LinearLayout) newReservationLayout.getChildAt(1);
+        LinearLayout newButtonLayout = (LinearLayout) buttonLayout.getChildAt(3);
+        newButtonLayout.removeAllViews();
+
+        // 문의 버튼 추가
+        Button inquiryButton = new Button(this);
+        inquiryButton.setLayoutParams(new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT));
+        inquiryButton.setText("문의");
+        inquiryButton.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.blue)));
+        inquiryButton.setTextColor(getResources().getColor(R.color.white));
+        inquiryButton.setOnClickListener(v -> showInquiryDialog());
+        newButtonLayout.addView(inquiryButton);
+
+        // 취소 버튼 추가
+        Button cancelButton = new Button(this);
+        cancelButton.setLayoutParams(new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT));
+        cancelButton.setText("취소");
+        cancelButton.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.gray)));
+        cancelButton.setTextColor(getResources().getColor(R.color.white));
+        cancelButton.setOnClickListener(v -> showCancelDialog(newReservationLayout));
+        newButtonLayout.addView(cancelButton);
+
+        // 새 레이아웃을 나의 예약 섹션에 추가
+        binding.myReservationsContainer.addView(newReservationLayout);
+
+        // 기존 레이아웃 숨기기
+        reservationLayout.setVisibility(View.GONE);
+    }
+
+    private void moveReservationToAvailable(View reservationView) {
+        if (reservationView.getParent() instanceof ViewGroup) {
+            ((ViewGroup) reservationView.getParent()).removeView(reservationView);
+
+            // 예약 버튼으로 변경
+            LinearLayout buttonLayout = (LinearLayout) ((LinearLayout) reservationView).getChildAt(1);
+            LinearLayout newButtonLayout = (LinearLayout) buttonLayout.getChildAt(3);
+            newButtonLayout.removeAllViews();
+
+            Button reservationButton = new Button(this);
+            reservationButton.setLayoutParams(new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT));
+            reservationButton.setText("예약하기");
+            reservationButton.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.blue)));
+            reservationButton.setTextColor(getResources().getColor(R.color.white));
+            reservationButton.setOnClickListener(v -> showReservationCompleteDialog((LinearLayout) reservationView));
+            newButtonLayout.addView(reservationButton);
+
+            // 예약 가능한 주점 섹션에 추가
+            binding.availableReservationsContainer.addView(reservationView);
+        }
+    }
+
+    private View cloneView(View view) {
+        if (view instanceof ImageView) {
+            ImageView originalImage = (ImageView) view;
+            ImageView newImage = new ImageView(this);
+            newImage.setLayoutParams(originalImage.getLayoutParams());
+            newImage.setImageDrawable(originalImage.getDrawable());
+            newImage.setScaleType(originalImage.getScaleType());
+            return newImage;
+        } else if (view instanceof LinearLayout) {
+            LinearLayout originalLayout = (LinearLayout) view;
+            LinearLayout newLayout = new LinearLayout(this);
+            newLayout.setLayoutParams(originalLayout.getLayoutParams());
+            newLayout.setOrientation(originalLayout.getOrientation());
+            for (int i = 0; i < originalLayout.getChildCount(); i++) {
+                newLayout.addView(cloneView(originalLayout.getChildAt(i)));
+            }
+            return newLayout;
+        } else if (view instanceof TextView) {
+            TextView originalText = (TextView) view;
+            TextView newText = new TextView(this);
+            newText.setLayoutParams(originalText.getLayoutParams());
+            newText.setText(originalText.getText());
+            newText.setTextSize(TypedValue.COMPLEX_UNIT_PX, originalText.getTextSize());
+            newText.setTypeface(originalText.getTypeface(), originalText.getTypeface().getStyle());
+            return newText;
+        }
+        return null;
     }
 }
