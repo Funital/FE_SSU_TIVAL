@@ -1,0 +1,3 @@
+com.example.fessutival_re.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

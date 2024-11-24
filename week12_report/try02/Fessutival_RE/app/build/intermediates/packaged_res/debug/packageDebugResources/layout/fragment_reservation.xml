@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".bottomNavigation.ReservationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Section: My Reservations -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="나의 예약"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/ssu_gray" />
+
+            <LinearLayout
+                android:id="@+id/reservationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/view_border"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- Image for the reservation poster -->
+                <ImageView
+                    android:id="@+id/reserve"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:contentDescription="Poster image"
+                    android:src="@drawable/it_reservation_image" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <!-- Reservation Details -->
+                    <TextView
+                        android:id="@+id/myReservationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IT대학 주점"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/myWaitingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="6dp"
+                        android:text="내 앞에 대기팀 : 5팀"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/myWaitingTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="6dp"
+                        android:text="예상 대기시간 : 30~40분"
+                        android:textSize="12sp" />
+
+                    <!-- Inquiry and Cancel Buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:weightSum="2"
+                        android:paddingTop="12dp">
+
+                        <Button
+                            android:id="@+id/myReservationButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:paddingHorizontal="16dp"
+                            android:paddingVertical="8dp"
+                            android:backgroundTint="@color/ssu_color"
+                            android:text="문의"
+                            android:textSize="10sp"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/myCancelReservationButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingHorizontal="16dp"
+                            android:paddingVertical="8dp"
+                            android:backgroundTint="@color/ssu_gray"
+                            android:text="취소"
+                            android:textSize="10sp"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Divider -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="예약 가능한 주점"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/ssu_gray" />
+
+            <!-- Repeatable section inside a vertical LinearLayout to allow scrolling -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <!-- Example of a reservation item, repeat this block to create more -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_border"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Image for the available reservation -->
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:contentDescription="Poster image"
+                        android:src="@drawable/business_reservation_image" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp">
+
+                        <!-- Available Reservation Details -->
+                        <TextView
+                            android:id="@+id/availableReservationText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="경영대학 주점"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:text="현재 대기팀 : 2팀"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTime1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="5dp"
+                            android:text="예상 대기시간 : 10~20분"
+                            android:textSize="12sp" />
+
+                        <!-- Reservation Button -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:paddingTop="12dp">
+
+                            <Button
+                                android:id="@+id/availableReservationButton1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/ssu_color"
+                                android:text="예약하기"
+                                android:textSize="10sp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_border"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Image for the available reservation -->
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:contentDescription="Poster image"
+                        android:src="@drawable/business_reservation_image" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp">
+
+                        <!-- Available Reservation Details -->
+                        <TextView
+                            android:id="@+id/availableReservationText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="경영대학 주점"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:text="현재 대기팀 : 2팀"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTime2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="5dp"
+                            android:text="예상 대기시간 : 10~20분"
+                            android:textSize="12sp" />
+
+                        <!-- Reservation Button -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:paddingTop="12dp">
+
+                            <Button
+                                android:id="@+id/availableReservationButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/ssu_color"
+                                android:text="예약하기"
+                                android:textSize="10sp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_border"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Image for the available reservation -->
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:contentDescription="Poster image"
+                        android:src="@drawable/business_reservation_image" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp">
+
+                        <!-- Available Reservation Details -->
+                        <TextView
+                            android:id="@+id/availableReservationText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="경영대학 주점"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTextView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:text="현재 대기팀 : 2팀"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTime3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="5dp"
+                            android:text="예상 대기시간 : 10~20분"
+                            android:textSize="12sp" />
+
+                        <!-- Reservation Button -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:paddingTop="12dp">
+
+                            <Button
+                                android:id="@+id/availableReservationButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/ssu_color"
+                                android:text="예약하기"
+                                android:textSize="10sp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_border"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Image for the available reservation -->
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:contentDescription="Poster image"
+                        android:src="@drawable/business_reservation_image" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp">
+
+                        <!-- Available Reservation Details -->
+                        <TextView
+                            android:id="@+id/availableReservationText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="경영대학 주점"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTextView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:text="현재 대기팀 : 2팀"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTime4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="5dp"
+                            android:text="예상 대기시간 : 10~20분"
+                            android:textSize="14sp" />
+
+                        <!-- Reservation Button -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:paddingTop="12dp">
+
+                            <Button
+                                android:id="@+id/availableReservationButton4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/ssu_color"
+                                android:text="예약하기"
+                                android:textSize="10sp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_border"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Image for the available reservation -->
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:contentDescription="Poster image"
+                        android:src="@drawable/business_reservation_image" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp">
+
+                        <!-- Available Reservation Details -->
+                        <TextView
+                            android:id="@+id/availableReservationText5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="경영대학 주점"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:text="현재 대기팀 : 2팀"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/availableWaitingTime5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="5dp"
+                            android:text="예상 대기시간 : 10~20분"
+                            android:textSize="12sp" />
+
+                        <!-- Reservation Button -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:paddingTop="12dp">
+
+                            <Button
+                                android:id="@+id/availableReservationButton5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/ssu_color"
+                                android:text="예약하기"
+                                android:textSize="10sp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

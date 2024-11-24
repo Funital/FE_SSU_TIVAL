@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/color_nav_item_color_selector.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/color/nav_item_color_selector.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/xml_backup_rules.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_ssu_backgr.png.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/ssu_backgr.png"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_baseline_confirmation_number_24.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/baseline_confirmation_number_24.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/menu_bottom_navigation_menu.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/menu/bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_ssu_profile.png.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/ssu_profile.png"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/layout_fragment_calendar.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/layout/fragment_calendar.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/layout_item_event.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/layout/item_event.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_night_booth_map.png.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/night_booth_map.png"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_view_border.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/view_border.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_baseline_calendar_today_24.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/baseline_calendar_today_24.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_baseline_home_24.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/baseline_home_24.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/layout_fragment_reservation.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/layout/fragment_reservation.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_baseline_settings_24.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/baseline_settings_24.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_day_booth_map.png.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/day_booth_map.png"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/layout_activity_splash.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/layout_fragment_settings.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_main_poster_horizontal.png.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/main_poster_horizontal.png"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/layout_fragment_home.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_business_reservation_image.png.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/business_reservation_image.png"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.fessutival_re.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.fessutival_re.app-debug-31:/drawable_it_reservation_image.png.flat",
+        "source": "com.example.fessutival_re.app-main-33:/drawable/it_reservation_image.png"
+    }
+]
