@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/view_border"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/CompleteTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="예약 취소하기"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Message TextView -->
+        <TextView
+            android:id="@+id/CompleteTextView2"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="예약이 취소되었습니다."
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <!-- Okay Button -->
+            <Button
+                android:id="@+id/okayButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Okay"
+                android:textColor="#18A0FB" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
