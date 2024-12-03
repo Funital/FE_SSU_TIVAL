@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_main_poster_vertical.jpg.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/main_poster_vertical.jpg"
+    },
+    {
+        "merged": "com.foo.fessutival.app-debug-31:/drawable_main_stage_entrance3.jpg.flat",
+        "source": "com.foo.fessutival.app-main-33:/drawable/main_stage_entrance3.jpg"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_artist_line_up.png.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/artist_line_up.png"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/layout_activity_day_booth01.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/layout/activity_day_booth01.xml"
+    },
+    {
+        "merged": "com.foo.fessutival.app-debug-31:/layout_activity_festival_notification01.xml.flat",
+        "source": "com.foo.fessutival.app-main-33:/layout/activity_festival_notification01.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.foo.fessutival.app-debug-31:/drawable_main_stage_entrance1.png.flat",
+        "source": "com.foo.fessutival.app-main-33:/drawable/main_stage_entrance1.png"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_day_booth4.png.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/day_booth4.png"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_day_booth2.png.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/day_booth2.png"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_baseline_search_24.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/baseline_search_24.xml"
+    },
+    {
+        "merged": "com.foo.fessutival.app-debug-31:/drawable_main_stage_entrance5.jpg.flat",
+        "source": "com.foo.fessutival.app-main-33:/drawable/main_stage_entrance5.jpg"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/layout_activity_day_booth128.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/layout/activity_day_booth128.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_main_poster_horizontal.png.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/main_poster_horizontal.png"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/xml_backup_rules.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_day_booth_map.png.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/day_booth_map.png"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/layout_activity_home_festival_information01.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/layout/activity_home_festival_information01.xml"
+    },
+    {
+        "merged": "com.foo.fessutival.app-debug-31:/drawable_main_stage_entrance2.jpg.flat",
+        "source": "com.foo.fessutival.app-main-33:/drawable/main_stage_entrance2.jpg"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_night_booth_map.png.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/night_booth_map.png"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.foo.fessutival.app-debug-31:/layout_activity_home_festival_information01.xml.flat",
+        "source": "com.foo.fessutival.app-main-33:/layout/activity_home_festival_information01.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/layout_activity_home01.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/layout/activity_home01.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.foo.fessutival.app-debug-31:/drawable_main_stage_entrance4.jpg.flat",
+        "source": "com.foo.fessutival.app-main-33:/drawable/main_stage_entrance4.jpg"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/drawable_day_booth3.png.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/drawable/day_booth3.png"
+    },
+    {
+        "merged": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/jeff/.gradle/daemon/8.7/com.foo.fessutival.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    }
+]
