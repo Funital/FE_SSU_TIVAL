@@ -8,13 +8,13 @@
     android:layout_marginBottom="40dp">
 
     <TextView
-        android:id="@+id/main_stage_entrance_text"
+        android:id="@+id/main_stage_traffic_notice_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="메인 스테이지 입장 안내"
+        android:text="메인 스테이지 통행 유의사항"
         android:textSize="20sp" />
     <ScrollView
         android:layout_width="match_parent"
@@ -29,41 +29,49 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/main_stage_entrance_01"
+                android:id="@+id/main_stage_traffic_notice_01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:adjustViewBounds="true">
             </ImageView>
             <ImageView
-                android:id="@+id/main_stage_entrance_02"
+                android:id="@+id/main_stage_traffic_notice_02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:adjustViewBounds="true">
             </ImageView>
             <ImageView
-                android:id="@+id/main_stage_entrance_03"
+                android:id="@+id/main_stage_traffic_notice_03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:adjustViewBounds="true">
             </ImageView>
             <ImageView
-                android:id="@+id/main_stage_entrance_04"
+                android:id="@+id/main_stage_traffic_notice_04"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:adjustViewBounds="true">
             </ImageView>
             <ImageView
-                android:id="@+id/main_stage_entrance_05"
+                android:id="@+id/main_stage_traffic_notice_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true">
+            </ImageView>
+            <ImageView
+                android:id="@+id/main_stage_traffic_notice_06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:adjustViewBounds="true">
             </ImageView>
+
 
         </LinearLayout>
 

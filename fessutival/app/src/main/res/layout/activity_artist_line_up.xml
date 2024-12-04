@@ -8,13 +8,13 @@
     android:layout_marginBottom="40dp">
 
     <TextView
-        android:id="@+id/main_stage_banned_list_text"
+        android:id="@+id/artist_line_up_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="메인 스테이지 반입 금지 물품 및 유의사항"
+        android:text="아티스트 라인업 소개"
         android:textSize="20sp" />
     <ScrollView
         android:layout_width="match_parent"
@@ -29,28 +29,13 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/main_stage_banned_list_01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:adjustViewBounds="true">
-            </ImageView>
-            <ImageView
-                android:id="@+id/main_stage_banned_list_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:adjustViewBounds="true">
-            </ImageView>
-            <ImageView
-                android:id="@+id/main_stage_banned_list_03"
+                android:id="@+id/artist_line_up_01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:adjustViewBounds="true">
             </ImageView>
-
 
         </LinearLayout>
 
