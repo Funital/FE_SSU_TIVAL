@@ -115,7 +115,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="30dp"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -452,7 +452,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:layout_marginStart="5dp"
-                    android:text="[3일차 아티스트] 씨앤블루 (CNBLUE)">
+                    android:text="[3일차 아티스트] 씨엔블루 (CNBLUE)">
                 </TextView>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -532,7 +532,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:layout_marginStart="5dp"
-                    android:text="[2일차 특별 아티스트] 빵송국">
+                    android:text="[2일차 특별 아티스트] 빵송국, 이선민">
                 </TextView>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -670,7 +670,6 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginBottom="10dp"
                 android:visibility="visible">
                 <TextView
                     android:layout_width="match_parent"

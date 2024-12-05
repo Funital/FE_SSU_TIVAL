@@ -28,6 +28,7 @@ import com.foo.fessutival.Home.festival_information.festival_notification.artist
 import com.foo.fessutival.Home.festival_information.festival_notification.artist.day_3.YounhaActivity;
 import com.foo.fessutival.Home.festival_information.festival_notification.booth.DayBoothActivity;
 import com.foo.fessutival.Home.festival_information.festival_notification.booth.FoodTruckActivity;
+import com.foo.fessutival.Home.festival_information.festival_notification.booth.HiteJinroBoothActivity;
 import com.foo.fessutival.Home.festival_information.festival_notification.booth.NightBoothActivity;
 import com.foo.fessutival.Home.festival_information.festival_notification.event.GoodsActivity;
 import com.foo.fessutival.Home.festival_information.festival_notification.event.HeadOfficeEventActivity;
@@ -169,7 +170,7 @@ public class Home_festival_informationActivity extends AppCompatActivity {
         hiteJinroBoothCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Home_festival_informationActivity.this, Home_festival_informationActivity.class));
+                startActivity(new Intent(Home_festival_informationActivity.this, HiteJinroBoothActivity.class));
             }
         });
 

@@ -94,7 +94,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity><activity
+        android:name=".Home.festival_information.festival_notification.artist.day_2.RoyKimActivity"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
         <activity
             android:name=".Home.festival_information.festival_notification.artist.day_2.YdbbActivity"
             android:exported="true">
@@ -153,7 +161,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home.festival_information.festival_notification.booth.HiteJinroBooth"
+            android:name=".Home.festival_information.festival_notification.booth.HiteJinroBoothActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -207,7 +215,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Home.festival_information.festival_notification.event.HeadOfficeEvent"
+            android:name=".Home.festival_information.festival_notification.event.HeadOfficeEventActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -338,15 +346,7 @@
         <activity
             android:name=".Home.HomeActivity"
             android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

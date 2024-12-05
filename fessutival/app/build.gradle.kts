@@ -47,4 +47,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
     implementation ("com.github.bumptech.glide:glide:4.15.1")
+    implementation ("com.google.android.exoplayer:exoplayer:2.19.0")
 }

@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.festival_information.festival_notification.artist.day_2.ResceneActivity">
+    android:orientation="vertical"
+    android:layout_marginBottom="40dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/rescene_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="[2일차 특별 아티스트] 리센느 (RESCENE)"
+        android:textSize="20sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rescene_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true">
+            </ImageView>
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/rescene_02"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:resize_mode="fit">
+            </com.google.android.exoplayer2.ui.PlayerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
