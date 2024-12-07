@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/day_booth128_text"
+        android:id="@+id/day_booth121_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -46,7 +46,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_weight="1"
-                            android:text="스타카토"
+                            android:text="리버스 보드게임 카페"
                             android:textSize="18sp"></TextView>
 
                         <TextView
@@ -54,7 +54,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="10dp"
                             android:background="#FFF296"
-                            android:text=" 28 "
+                            android:text=" 21 "
                             android:textSize="18sp"></TextView>
                     </LinearLayout>
 
@@ -63,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"
-                        android:text="호스트 : 하양까망 (중앙 피아노동아리)"
+                        android:text="호스트 : 리버스 (중앙 보드게임동아리)"
                         android:textSize="12sp"></TextView>
 
                     <TextView
@@ -71,7 +71,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="5dp"
-                        android:text="부스 정보 : 아포카토 판매 및 피아노 연주"
+                        android:text="부스 정보 : 보드게임 홍보 및 체험"
                         android:textSize="12sp"></TextView>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -83,7 +83,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="호스트 : 하양까망 (중앙 피아노동아리)"
+                android:text="호스트 : 리버스 (중앙 보드게임동아리)"
                 android:textSize="18sp" />
             <TextView
                 android:id="@+id/day_booth128_script_text"
@@ -92,8 +92,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="하양까망은 숭실대학교 중앙 피아노동아리로 2014년에 시작되어 11년째
-활동중인 동아리입니다. 활동 회원은 100명으로 피아노 멘토링, 정기 연주회, 피아노 연주회 관람 등 피아노와 관련된 다양한 활동을 진행중인 동아리입니다. 피아노에 관심이 있으시다면 동아리에 지원해 보시는 것은 어떤가요?"
+                android:text="리버스는 2024년 정식동아리로 선정되기 전부터 보드게임을 좋아하는 사람들이 모여 재밌게 보드게임을 치던 소모임입니다.
+현재는 정식동아리로 등록되었고 보드게임 파티, 페스타 참가, 보드게임 제작 등 관련된 다양한 활동을 진행하고 있습니다."
                 android:textSize="15sp" />
 
             <TextView
@@ -107,46 +107,7 @@
                 android:textSize="18sp" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:padding="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_weight="1"
-                        android:text="아포가토 판매"
-                        android:textSize="18sp"></TextView>
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="10dp"
-                    android:text="에스프레소와 아이스크림을 조합한 이탈리식 디저트"
-                    android:textSize="12sp"></TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="가격 : 3000원 (이벤트 참여자 / 정회원 : 2500원)"
-                    android:textSize="12sp"></TextView>
-            </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
+                android:id="@+id/day_booth_card_211"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:layout_marginStart="20dp"
@@ -165,7 +126,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_weight="1"
-                        android:text="전자피아노 연주"
+                        android:text="보드게임 체험"
                         android:textSize="18sp"></TextView>
 
 
@@ -174,7 +135,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"
-                        android:text="피아노를 잘 치는 사람도 피아노를 못 치는 사람도"
+                        android:text="보드게임을 잘 모르는 사람도 쉽게 즐길 수 있는 부스!"
                         android:textSize="12sp"></TextView>
 
                     <TextView
@@ -182,10 +143,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="5dp"
-                        android:text="부스에 와서 자유롭게 피아노를 연주보세요!"
+                        android:text="많이 와서 다양한 보드게임 즐기고 가세요!"
                         android:textSize="12sp"></TextView>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
         </LinearLayout>
 
 

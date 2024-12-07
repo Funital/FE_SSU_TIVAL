@@ -6,12 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.foo.fessutival.R;
 
-public class Day_Booth1_28 extends AppCompatActivity {
+public class Day_Booth1_21 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_day_booth128);
+        setContentView(R.layout.activity_day_booth121);
 
     }
 }

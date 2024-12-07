@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.foo.fessutival.Home.booth_information.Day_booth_01Activity;
+import com.foo.fessutival.Home.booth_information.Night_booth_01Activity;
 import com.foo.fessutival.Home.festival_information.Home_festival_informationActivity;
 import com.foo.fessutival.R;
 
@@ -54,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
         nightButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, Day_booth_01Activity.class));
+                startActivity(new Intent(HomeActivity.this, Night_booth_01Activity.class));
             }
         });
 

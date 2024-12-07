@@ -15,6 +15,24 @@
         android:theme="@style/Theme.Fessutival"
         tools:targetApi="31">
         <activity
+            android:name=".Home.booth_information.day_booth1.Day_Booth1_21"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home.booth_information.Night_booth_01Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Home.festival_information.festival_notification.artist.day_3.CnblueActivity"
             android:exported="true">
             <intent-filter>
@@ -94,15 +112,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity><activity
-        android:name=".Home.festival_information.festival_notification.artist.day_2.RoyKimActivity"
-        android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <activity
+            android:name=".Home.festival_information.festival_notification.artist.day_2.RoyKimActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Home.festival_information.festival_notification.artist.day_2.YdbbActivity"
             android:exported="true">
@@ -346,7 +365,6 @@
         <activity
             android:name=".Home.HomeActivity"
             android:exported="true" />
-
     </application>
 
 </manifest>
